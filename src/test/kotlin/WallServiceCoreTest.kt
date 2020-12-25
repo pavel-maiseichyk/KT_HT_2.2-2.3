@@ -19,7 +19,7 @@ class WallServiceCoreTest {
         service.add(post = Post(text = "второй пошёл!"))
         service.add(post = Post(text = "третий пошёл!"))
 
-        val updatePost = Post(id = 6, text = "второй обновлён!")
+        val updatePost = Post(id = 2, text = "второй обновлён!")
         val result = service.update(updatePost)
         assertTrue(result)
     }
