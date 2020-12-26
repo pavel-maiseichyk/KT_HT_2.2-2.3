@@ -1,6 +1,6 @@
 data class Post(
     val id: Int = 0,
-    val ownerId: Int  = 0,
+    val ownerId: Int = 0,
     val fromId: Int = 0,
     val createdBy: Int = 0,
     val date: Int = 0,
@@ -22,6 +22,9 @@ data class Post(
     val markedAsAds: Boolean = false,
     val isFavourite: Boolean = false,
     val postponedId: Int = 0,
+    val postSource: Any? = null,
+    val geo: Any? = null,
+    val copyHistory: Array<Post>? = null
 )
 
 data class Comments(
